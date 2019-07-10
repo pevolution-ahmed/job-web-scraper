@@ -1,0 +1,17 @@
+
+
+  <ul class="list-group">
+    <li  *ngFor="let item of searchRes" class="list-group-item">
+      <div class="card ">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+          <h4 class="card-title " ><a class="text-white" href={{item.link}}>{{item.title}}</a><span class="badge badge-secondary" style="margin-left: 10px;background-color: #fff3bc; color: tomato"> New</span></h4>
+          <div class="card-content">
+            {{item.description}}
+          </div>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+

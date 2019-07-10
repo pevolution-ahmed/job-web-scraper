@@ -1,21 +1,26 @@
-{
+ {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "baseUrl": "./src",
+    "esModuleInterop": true ,                  /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "rootDir": "./src",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     "sourceMap": true,
+    "target": "es5",
+    "outDir": "./dist",
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "declaration": false,
     "downlevelIteration": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
     "typeRoots": [
       "node_modules/@types"
     ],
+
+
     "lib": [
       "es2018",
       "dom"
